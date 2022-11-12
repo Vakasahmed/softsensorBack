@@ -22,9 +22,9 @@ app.get("*", (req, res) => {
 });
 
 
-if(process.env.NODE_ENV === "production"){
-  app.use(express.static("softsensor-project/build"))
-}
+// if(process.env.NODE_ENV === "production"){
+//   app.use(express.static("softsensor-project/build"))
+// }
 
 app.listen(PORT, () => {
   console.log(`BE started at port ${PORT}`);
